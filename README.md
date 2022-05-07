@@ -4,94 +4,93 @@
 
 # Raid Protect Discord Bot
 
-Raid Protect is a Discord bot wich allow to protect your discord server efficiently.
+Raid Protect es un bot de Discord que permite proteger tu servidor de Discord de manera eficiente.
 
 ## Captcha
 ![](https://media.discordapp.net/attachments/971225663438741616/972266318780858418/Capture1.png?width=481&height=123)
 
-## Installation
+## Instalación
 
-Install all dependencies:
+Instalar todas las dependencias:
 
 * `pip install -r requirements.txt`
-* Then put your Discord token that can be found in the Discord's developers portal inside `config.example.json` (do not change anything else)
-* Rename it to `config.json`
-* This bot have to use the "server members intent", so you have to enable it in the Discord's developers portal
+* Luego coloque su token de Discord que se puede encontrar en el portal de desarrolladores de Discord dentro `config.example.json` (no cambies nada más)
+* Cambiarle el nombre a `config.json`
+* Este bot debe usar la "server members intents", por lo que debe habilitarlo en el portal de desarrolladores de Discord
 
-Finally, host the bot and invite it to your own server.
+Finalmente, aloje el bot e invítelo a su propio servidor.
 
-## Features
+## Características
 
-This Discord Bot protect your Discord server with many functions.
-
+Este Discord Bot protege su servidor Discord con muchas funciones.
 * Captcha firewall
-* Minimum account age required
-* Anti nudity image
+* Edad mínima de cuenta requerida
+* imagen contra la desnudez
 * Anti profanity
-* Anti spam
+* AntiSpam
 * Logs
-* Basic moderation commands
-* Multi guild support
-* Multi language (EN, FR)
+* Comandos básicos de moderación
+* Soporte multigremio
+* Multi lenguaje (EN, FR)
 
-Restrictions do not affect members with ADMINISTRATOR permission !
+¡Las restricciones no afectan a los miembros con permiso de ADMINISTRADOR!
 
 ## Logs
 
 ![](https://media.discordapp.net/attachments/971225663438741616/972266579691708496/Capture2.png?width=273&height=283)
 
-## Commands
+## Comandos
 
 ```
-?setup <on/off> : Set up the captcha protection.
-?settings : Display the list of settings.
-?giveroleaftercaptcha <role ID/off> : Give a role after that the user passed the captcha.
-?minaccountage <number (hours)> : set a minimum age to join the server (24 hours by default).
-?antinudity <true/false> : Enable or disable the nudity image protection.
-?antiprofanity <true/false> : Enable or disable the profanity protection.
-?antispam <true/false> : Enable or disable the spam protection.
-?allowspam <#channel> (False) : Enable or disable the spam protection in a specific channel.
-?lock | unlock <#channel> : Lock/Unlock a specific channel.
+?setup <on/off> : Configura la protección captcha.
+?settings : Muestra la lista de ajustes.
+?giveroleaftercaptcha <role ID/off> : Asigne un rol después de que el usuario haya pasado el captcha.
+?minaccountage <number (hours)> : establezca una edad mínima para unirse al servidor (24 horas por default).
+?antinudity <true/false> : Habilite o deshabilite la protección de imágenes de desnudos.
+?antiprofanity <true/false> : Habilite o deshabilite la protección contra la blasfemia.
+?antispam <true/false> : Habilite o deshabilite la protección contra correo no deseado.
+?allowspam <#channel> (False) : Habilite o deshabilite la protección contra correo no deseado en un canal específico.
+?lock | unlock <#channel> : Bloquear/Desbloquear un canal específico.
 
-?userinfos <@user/ID> : Get user infomations.
+?userinfos <@user/ID> : Obtener información del usuario.
 
-?ban <@user/ID> : Ban the user.
-?kick <@user/ID> : Kick the user.
+?ban <@user/ID> : Banear al Usuario
+?kick <@user/ID> : Kickear a un usuario
 
-?changeprefix <prefix> : Change the bot's prefix for the guild.
-?changelanguage <language> : Change the bot's language for the guild.
-?help : display help.
+?changeprefix <prefix> : Cambia el prefijo del bot para el Guild
+?changelanguage <language> : Cambia el idioma del bot para el Guild
+?help : mostrar help
 ```
 
-## Potential errors
+## Posibles errores
 
-### ImportError: cannot import name 'joblib' form 'sklearn.externals'
-You have to download the last version of profanity_check.
-Unstall you current version and download the v1.0.6 with `git+https://github.com/dimitrismistriotis/profanity-check` 
+###ImportError: no se puede importar el nombre 'joblib' forma 'sklearn.externals'
+Tienes que descargar la última versión de profanity_check.
+Desinstale su versión actual y descargue la v1.0.6 con `git+https://github.com/dimitrismistriotis/profanity-check` 
 
 ## Discord
 
-Join the Discord server !
+¡Únete al servidor de Discord!
 
 [[Discord]](https://discord.gg/wBpqcQQASE)
 
-## Contributing
+## Contribuyendo
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Las solicitudes de extracción son bienvenidas. Para cambios importantes, abra un problema primero para discutir lo que le gustaría cambiar.
 
-Please make sure to update tests as appropriate.
+Asegúrese de actualizar las pruebas según corresponda.
 
 
-## License
+## Licencia
 
-This project is under [GPLv3](https://github.com/AlexClient/Raid-Protect-Discord-Bot/blob/838e73e31b63d135cb6038ef0b24a4a6a3cef369/LICENSE).
+Este proyecto está bajo [GPLv3](https://github.com/AlexClient/Raid-Protect-Discord-Bot/blob/838e73e31b63d135cb6038ef0b24a4a6a3cef369/LICENSE).
 
-## Stargazers
-[![Stargazers over time](https://starchart.cc/Darkempire78/Raid-Protect-Discord-Bot.svg)](https://starchart.cc/Darkempire78/Raid-Protect-Discord-Bot)
+## Astrónomos
+[![Observadores de estrellas a lo largo del tiempo](https://starchart.cc/Darkempire78/Raid-Protect-Discord-Bot.svg)](https://starchart.cc/Darkempire78/Raid-Protect-Discord-Bot)
 
-# Advice :
+# Consejo :
 
-You should use [Discord Tools](https://marketplace.visualstudio.com/items?itemName=Darkempire78.discord-tools) to code your Discord bots on Visual Studio Code easier.
-Works for Python (Discord.py), Javascript (Discord.js, Eris) and Java (JDA). Generate template bot and code (snippets).
-- **Download :** https://marketplace.visualstudio.com/items?itemName=Darkempire78.discord-tools
-- **Repository :** https://github.com/Darkempire78/Discord-Tools
+Deberías usar [Discord Tools](https://marketplace.visualstudio.com/items?itemName=Darkempire78.discord-tools) to code your Discord bots on Visual Studio Code easier.
+Funciona para Python (Discord.py), Javascript (Discord.js, Eris) y Java (JDA). Generar código y bot de plantilla (snippets).
+- **Descargar :** https://marketplace.visualstudio.com/items?itemName=Darkempire78.discord-tools
+- **Repositorio :** https://github.com/Darkempire78/Discord-Tools
